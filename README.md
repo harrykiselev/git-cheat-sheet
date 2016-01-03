@@ -1,10 +1,10 @@
 Git Cheat Sheet - git-flow [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 ===============
-<hr>
+***
 <p align="center">
 	<img alt="Git" src="./Img/git-logo.png" height="190" width="455">
 </p>
-<hr>
+***
 # Other Available Languages:
 1. [Chinese Git Cheat Sheet](https://github.com/ArslanBilal/Git-Cheat-Sheet/blob/master/other-sheets/git-cheat-sheet-zh.md)
 2. [Turkish Git Cheat Sheet](https://github.com/ArslanBilal/Git-Cheat-Sheet/blob/master/other-sheets/git-cheat-sheet-tr.md)
@@ -16,7 +16,7 @@ Git Cheat Sheet - git-flow [![Awesome](https://cdn.rawgit.com/sindresorhus/aweso
 Git cheat sheet saves you from learning all the commands by heart.
 
 Be free to contribute, update the grammar mistakes. You are also free to add your language file.
-<hr>
+***
 
 Git Cheat Sheet English
 ===============
@@ -33,7 +33,7 @@ Git Cheat Sheet English
 * [Git Flow](#git-flow)
 
 
-<hr>
+***
 ##Setup
 
 #####Set a name that is identifiable for credit when review version history:
@@ -50,7 +50,7 @@ $ git config --global user.email “[valid-email]”
 ```
 $ git config --global color.ui auto
 ```
-<hr>
+***
 ##Create
 
 #####Clone an existing repository:
@@ -62,7 +62,7 @@ $ git clone ssh://user@domain.com/repo.git
 ```
 $ git init
 ```
-<hr>
+***
 ##Local Changes
 
 #####Changes in working directory:
@@ -122,7 +122,7 @@ git stash pop
 ```
 git stash apply
 ```
-<hr>
+***
 ##Search
 
 #####A text search on all files in the directory:
@@ -135,7 +135,7 @@ $ git grep "Hello"
 $ git grep "Hello" v2.5
 ```
 
-<hr>
+***
 ###Commit History
 
 #####Show all commits, starting with newest (it'll show the hash, author information, date of commit and title of the commit):
@@ -162,7 +162,7 @@ $ git log -p <file>
 ```
 $ git blame <file>
 ```
-<hr>
+***
 ##Branches & Tags
 
 #####List all local branches:
@@ -216,7 +216,7 @@ $ git tag <tag-name>
 ```
 $ git tag -a <tag-name>
 ```
-<hr>
+***
 ##Update & Publish
 
 #####List all current configured remotes:
@@ -270,7 +270,7 @@ git push <remote> --delete <branch> (since Git v1.7.0)
 ```
 $ git push --tags
 ```
-<hr>
+***
 ##Merge & Rebase
 
 #####Merge <branch> into your current HEAD:
@@ -329,7 +329,7 @@ pick <commit_id>
 squash <commit_id2>
 squash <commit_id3>
 ```
-<hr>
+***
 ##Undo
 
 #####Discard all local changes in your working directory:
@@ -357,7 +357,7 @@ $ git revert <commit>
 $ git reset --hard <commit>
 ```
 
-#####Reset your HEAD pointer to a remote branch current state. 
+#####Reset your HEAD pointer to a remote branch current state.
 ```
 git reset --hard <remote/branch> e.g., upstream/master, origin/my-feature
 ```
@@ -378,7 +378,7 @@ $ git rm -r --cached .
 $ git add .
 $ git commit -m "remove xyz file"
 ```
-<hr>
+***
 
 ##Git-Flow
 
@@ -389,7 +389,7 @@ $ git commit -m "remove xyz file"
 * [Make a Release](#make-a-release)
 * [Hotfixes](#hotfixes)
 * [Commands](#commands)
-<hr>
+***
 
 
 ###Setup
@@ -415,7 +415,7 @@ $ apt-get install git-flow
 ```
 $ wget -q -O - --no-check-certificate https://github.com/nvie/gitflow/raw/develop/contrib/gitflow-installer.sh | bash
 ```
-<hr>
+***
 
 
 ###Getting Started
@@ -425,7 +425,7 @@ $ wget -q -O - --no-check-certificate https://github.com/nvie/gitflow/raw/develo
 ```
 git flow init
 ```
-<hr>
+***
 
 
 ###Features
@@ -462,7 +462,7 @@ git flow feature pull origin MYFEATURE
 ```
 git flow feature track MYFEATURE
 ```
-<hr>
+***
 
 
 ###Make a Release
@@ -489,7 +489,7 @@ git flow release publish RELEASE
 git flow release finish RELEASE
 ```
 ######Don't forget to push your tags with ```git push --tags```
-<hr>
+***
 
 
 ###Hotfixes
@@ -507,11 +507,11 @@ $ git flow hotfix start VERSION [BASENAME]
 ```
 git flow hotfix finish VERSION
 ```
-<hr>
+***
 
 
 ###Commands
 <p align="center">
 	<img alt="Git" src="./Img/git-flow-commands.png" height="270" width="460">
 </p>
-<hr>
+***
